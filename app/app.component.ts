@@ -29,6 +29,5 @@ export class AppComponent {
 		];
 	}
 	mealWasSelected(clickedMeal: Meal): void {
-		console.log('parent', clickedMeal);
 	}
 }

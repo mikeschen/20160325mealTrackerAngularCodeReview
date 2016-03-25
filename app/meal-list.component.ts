@@ -38,7 +38,6 @@ export class MealListComponent {
 		this.onMealSelect = new EventEmitter();
 	}
 	mealClicked(clickedMeal: Meal): void {
-		console.log('child', clickedMeal);
 		this.selectedMeal = clickedMeal;
 		this.onMealSelect.emit(clickedMeal);
 	}
@@ -51,7 +50,6 @@ export class MealListComponent {
 		this.filterCalorie = filterOption;
 	}
 	totalCalories() {
-		console.log(this.mealList);
 		public var total: number = 0;
 		for (var i = 0; i < this.mealList.length; i++) {
 			total = this.mealList[i].calories + total;
