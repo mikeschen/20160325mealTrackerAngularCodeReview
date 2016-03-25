@@ -5,3 +5,17 @@ h1 {
 .selected {
   color: #22bdf0;
 }
+
+ul {
+  display: none;
+}
+
+.selected ul {
+  display: block;
+}
+
+body {
+  background-image: url(../../resources/images/fitness.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
