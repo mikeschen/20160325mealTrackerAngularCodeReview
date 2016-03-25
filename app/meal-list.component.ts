@@ -52,7 +52,7 @@ export class MealListComponent {
 	}
 	totalCalories() {
 		console.log(this.mealList);
-		var total = 0;
+		public var total: number = 0;
 		for (var i = 0; i < this.mealList.length; i++) {
 			total = this.mealList[i].calories + total;
 		}
