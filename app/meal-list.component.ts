@@ -17,6 +17,7 @@ import { CaloriePipe } from './calorie.pipe';
   	<option value="high">Show Meals Over 300 Cal.</option>
   	<option value="low">Show Meals Under 300 Cal.</option>
 	</select>
+	<br>Total Calories Today: {{ totalCalories() }}
 		<meal-display *ngFor="#currentMeal of mealList | calorie:filterCalorie"
 			(click)="mealClicked(currentMeal)"
 			[class.selected]="currentMeal === selectedMeal"
@@ -48,5 +49,13 @@ export class MealListComponent {
 	}
 	onChange(filterOption) {
 		this.filterCalorie = filterOption;
+	}
+	totalCalories() {
+		console.log(this.mealList);
+		var total = 0;
+		for (var i = 0; i < this.mealList.length; i++) {
+			total = this.mealList[i].calories + total;
+		}
+		return total;
 	}
 }

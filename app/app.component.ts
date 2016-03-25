@@ -18,7 +18,6 @@ import { Meal } from './meal.model';
 	</div>
   `
 })
-
 export class AppComponent { 
 	public meals: Meal[];
 	constructor() {

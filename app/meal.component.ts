@@ -6,11 +6,15 @@ import { MealListComponent } from './meal-list.component';
 	selector: 'meal-display',
 	inputs:['meal'],
 	template:`
-		<h4>Name: {{ meal.name }}</h4>
-		<ul>
-		  <li>Details: {{ meal.description }}
-			<li>Calories: {{ meal.calories }}
-		</ul>
+		<div class="row">
+			<div class="col-md-2">
+				<h4>Name: {{ meal.name }}</h4>
+				<ul>
+				  <li>Details: {{ meal.description }}
+					<li>Calories: {{ meal.calories }}
+				</ul>
+		  </div>
+		</div>
   `
 })
 export class MealComponent {
