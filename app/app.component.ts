@@ -12,3 +12,9 @@ import { Component } from 'angular2/core';
 export class AppComponent { 
 
 }
+
+export class Meal {
+	constructor(public food: string, public description: string, public calories: number, public id: number) {
+
+	}
+}
