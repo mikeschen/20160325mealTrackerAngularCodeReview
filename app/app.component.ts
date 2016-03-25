@@ -6,13 +6,16 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   directives: [MealListComponent],
   template: `
+ 	<div class="dimmed">
 	  <div class="container">
-	    <h1>Globo Gym</h1>
+	    <a href="index.html"><h1>Meal Tracker</h1></a>
+	    <hr>
 	    <meal-list 
 		    [mealList]="meals"
 		    (onMealSelect)="mealWasSelected($event)">
 	    </meal-list>
 	  </div>
+	</div>
   `
 })
 
