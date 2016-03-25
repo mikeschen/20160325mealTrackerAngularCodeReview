@@ -5,9 +5,14 @@ import { Meal } from './meal.model';
 	selector: 'edit-meal-details',
 	inputs: ['meal'],
 	template: `
-		<h3>Edit Name: {{ meal.name }}
-			Edit Description: {{ meal.description }}
-			Edit Calories: {{ meal.calories }}
+		<div class="meal-form">
+			<h5>Edit Name: {{ meal.name }}</h5>
+			<input [(ngModel)]="meal.name" class="input-md task-form">
+			<h5>Edit Details: {{ meal.description }}</h5>
+			<input [(ngModel)]="meal.description" class="input-md task-form">
+			<h5>Edit Calories: {{ meal.calories }}</h5>
+			<input [(ngModel)]="meal.calories" class="input-md task-form">
+		</div>
 	`
 })
 
