@@ -12,6 +12,7 @@ ul {
 
 .selected ul {
   display: block;
+  list-style-type:none;
 }
 
 body {

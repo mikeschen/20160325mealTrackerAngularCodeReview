@@ -6,14 +6,13 @@ import { MealListComponent } from './meal-list.component';
 	selector: 'meal-display',
 	inputs:['meal'],
 	template:`
-		<h3>{{ meal.name }}</h3>
+		<h4>Name: {{ meal.name }}</h4>
 		<ul>
-		  <li>{{ meal.description }}
-			<li>{{ meal.calories }}
+		  <li>Details: {{ meal.description }}
+			<li>Calories: {{ meal.calories }}
 		</ul>
   `
 })
-
 export class MealComponent {
 	public meal: Meal;
 }
