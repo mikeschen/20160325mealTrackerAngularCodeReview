@@ -50,7 +50,7 @@ export class MealListComponent {
 		this.filterCalorie = filterOption;
 	}
 	totalCalories() {
-		public var total: number = 0;
+		var total: number = 0;
 		for (var i = 0; i < this.mealList.length; i++) {
 			total = this.mealList[i].calories + total;
 		}
